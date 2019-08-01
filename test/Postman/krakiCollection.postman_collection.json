@@ -1,0 +1,722 @@
+{
+	"info": {
+		"_postman_id": "774a3c3e-622d-4993-8b46-19fcab281836",
+		"name": "krakiCollection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Appointment",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{}"
+				},
+				"url": {
+					"raw": "https://localhost:5001/api/appointments",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"api",
+						"appointments"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Appointment",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"date\":\"2021-06-07\",\n\t\"ExaminationId\":1,\n\t\"DoctorId\":2,\n\t\"HospitalId\":4,\n\t\"PatientId\":2\n\t\n}"
+				},
+				"url": {
+					"raw": "https://localhost:5001/api/appointments",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"api",
+						"appointments"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Appointment",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "\n\t{\n\t\"id\":31,\n\t\"date\":\"2023-01-05\",\n\t\"ExaminationId\":1,\n\t\"DoctorId\":1,\n\t\"HospitalId\":5,\n\t\"PatientId\":3\n\t\n\t\n}\n"
+				},
+				"url": {
+					"raw": "https://localhost:5001/api/appointments/31",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"api",
+						"appointments",
+						"31"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Appointment",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{}"
+				},
+				"url": {
+					"raw": "https://localhost:5001/api/appointments/31",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"api",
+						"appointments",
+						"31"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "City",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{}"
+				},
+				"url": {
+					"raw": "https://localhost:5001/api/cities",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"api",
+						"cities"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "City",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"Name\":\"Velika Gorica\",\n\t\"Zip\" :10410 }"
+				},
+				"url": {
+					"raw": "https://localhost:5001/api/cities",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"api",
+						"cities"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "City",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"Name\":\"Varaždin\",\n\t\"Zip\":40000\n}"
+				},
+				"url": {
+					"raw": "https://localhost:5001/api/cities/1",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"api",
+						"cities",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "City",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"id\":2,\n\t\n}"
+				},
+				"url": {
+					"raw": "https://localhost:5001/api/cities/2",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"api",
+						"cities",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Doctor",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{}"
+				},
+				"url": {
+					"raw": "https://localhost:5001/api/doctors",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"api",
+						"doctors"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Doctor",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"FirstName\":\"Ivan\",\n\t\"LastName\":\"Ivic\",\n\t\"PhoneNumber\":\"0934623456\",\n\t\"Email\":\"ivec@hotmail.com\"\n}"
+				},
+				"url": {
+					"raw": "https://localhost:5001/api/doctors",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"api",
+						"doctors"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Doctor",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"FirstName\":\"Luka\",\n\t\"LastName\":\"Lukic\",\n\t\"PhoneNumber\":\"0917821\",\n\t\"Email\":\"johhny@vvg.com\"\n}"
+				},
+				"url": {
+					"raw": "https://localhost:5001/api/doctors/2",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"api",
+						"doctors",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Doctor",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:5001/api/doctors/2",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"api",
+						"doctors",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Examination",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{}"
+				},
+				"url": {
+					"raw": "https://localhost:5001/api/examinations",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"api",
+						"examinations"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Examination",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"Type\":\"Arm amputation\"\n}"
+				},
+				"url": {
+					"raw": "https://localhost:5001/api/examinations",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"api",
+						"examinations"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Examination",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"Type\":\"Leg amputation\"\n}"
+				},
+				"url": {
+					"raw": "https://localhost:5001/api/examinations/4",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"api",
+						"examinations",
+						"4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Examination",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://localhost:5001/api/examinations/3",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"api",
+						"examinations",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Hospital",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:5001/api/hospitals",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"api",
+						"hospitals"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Hospital",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"Name\":\"Zagrebacka\",\n\t\"PhoneNumber\":\"016221785\",\n\t\"Email\":\"zagrebica@gmail.com\",\n\t\"CityId\":\"3\"\n}"
+				},
+				"url": {
+					"raw": "https://localhost:5001/api/hospitals",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"api",
+						"hospitals"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Hospital",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"Name\":\"Milosrdnica\",\n\t\"PhoneNumber\":\"01621876\",\n\t\"Email\":\"milosrdnost@gmail.com\",\n\t\"CityId\":\"3\"\n}"
+				},
+				"url": {
+					"raw": "https://localhost:5001/api/hospitals/5",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"api",
+						"hospitals",
+						"5"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Hospital",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:5001/api/hospitals/5",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"api",
+						"hospitals",
+						"5"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Patient",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:5001/api/patients",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"api",
+						"patients"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Patient",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"firstName\": \"Ivan\",\r\n        \"lastName\": \"Horvat\",\r\n        \"phoneNumber\": \"0919274322\",\r\n        \"gender\": \"Male\",\r\n        \"email\": \"ludiivek@hotmail.com\",\r\n        \"birthdate\": \"1995-02-06T00:00:00\" }"
+				},
+				"url": {
+					"raw": "https://localhost:5001/api/patients",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"api",
+						"patients"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Patient",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"firstName\": \"Marko\",\r\n        \"lastName\": \"Markic\",\r\n        \"phoneNumber\": \"0984117843\",\r\n        \"gender\": \"Male\",\r\n        \"email\": \"markec@hotmail.com\",\r\n        \"birthdate\": \"1969-02-02T00:00:00\" }"
+				},
+				"url": {
+					"raw": "https://localhost:5001/api/patients/4",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"api",
+						"patients",
+						"4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Patient",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:5001/api/patients/4",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"api",
+						"patients",
+						"4"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
